@@ -1,4 +1,4 @@
-import { IonCol, IonContent, IonGrid, IonHeader, IonPage, IonRadio, IonRow, IonTitle, IonToolbar } from "@ionic/react";
+import { IonButton, IonCol, IonContent, IonGrid, IonHeader, IonMenuButton, IonPage, IonRadio, IonRow, IonTitle, IonToolbar } from "@ionic/react";
 import React from "react";
 
 const AllActivities: React.FC = () => {
@@ -7,6 +7,9 @@ const AllActivities: React.FC = () => {
         <IonPage>
             <IonHeader>
                 <IonToolbar>
+                    <IonButton slot="start">
+                        <IonMenuButton/>
+                    </IonButton>
                     <IonTitle>All activities</IonTitle>
                 </IonToolbar>
             </IonHeader>
